@@ -1,0 +1,181 @@
+@charset "UTF-8";
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.2.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+/**
+   * 1. Set default font family to sans-serif.
+   * 2. Prevent iOS and IE text size adjust after device orientation change,
+   *    without disabling user zoom.
+   */
+
+html {
+    font-family: sans-serif;
+    /* 1 */
+    
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+/**
+   * Remove default margin.
+   */
+
+body {
+    margin: 0;
+}
+/* HTML5 display definitions
+     ========================================================================== */
+/**
+   * Correct `block` display not defined for any HTML5 element in IE 8/9.
+   * Correct `block` display not defined for `details` or `summary` in IE 10/11
+   * and Firefox.
+   * Correct `block` display not defined for `main` in IE 11.
+   */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+/**
+   * 1. Correct `inline-block` display not defined in IE 8/9.
+   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+   */
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    /* 1 */
+    
+    vertical-align: baseline;
+    /* 2 */
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* ** Responsive grid CSS ** */
+
+/* *** Phone *** */
+
+@media screen and (min-width: 20em) {
+    .column,
+    .columns {
+        width: 100%;
+        float: left;
+        padding: 1rem;
+    }
+    .row .row {
+        margin-left: -0.9375rem;
+        margin-right: -0.9375rem;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .small-4 {
+        width: 100%;
+    }
+}
+/* **End Phone ** */
+/* ** Tablet ** */
+
+@media screen and (min-width: 40em) {
+    .row .row {
+        max-width: none;
+        margin-left: -0.625rem;
+        margin-right: -0.625rem;
+        max-width: none;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .column,
+    .columns {
+        width: 100%;
+        float: left;
+        padding: 1.5rem;
+    }
+    .medium-4 {
+        width: 50%;
+    }
+}
+/* ** End Tablet ** */
+
+/* ** Desktop ** */
+@media screen and (min-width: 64em) {
+    .rollover img:hover {
+      opacity: .5;
+    }
+    .row {
+        max-width: 75rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row::before,
+    .row::after {
+        content: ' ';
+        display: table;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .row .row {
+        max-width: none;
+        margin-left: -0.625rem;
+        margin-right: -0.625rem;
+        max-width: none;
+    }
+    .column,
+    .columns {
+        width: 100%;
+        float: left;
+        padding: 1.5rem;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+    .large-4 {
+        width: 33.33333%;
+    }
+}
+
+/* ** End Desktop ** */
