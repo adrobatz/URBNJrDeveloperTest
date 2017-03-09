@@ -1,2 +1,1 @@
-# URBNJrDeveloperTest
-Jr Dev Test - URBN Inc.
+# URBN Projects
